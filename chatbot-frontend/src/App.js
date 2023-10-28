@@ -35,7 +35,10 @@ const App = () => {
 
   return (
     <>
-    <p className=' w-[80vw] ml-[20vh] rounded-xl rounded-b-none mt-[10vh] p-5 bg-white' id="response">{response}</p>
+    <div className='ml-[20vh] rounded-xl rounded-b-none mt-[10vh] p-5 bg-white  w-[80vw]'>
+      <img src="chacha-chaudhary.png" alt="chacha" class="w-[50px] rounded-full"></img>
+      <p className='ml-[20vh] ' id="response">{response}</p>
+    </div>
     <div className="bg-[#E5CFF7]  kk flex justify-center ml-[20vh] rounded-xl rounded-t-none w-[80vw] ">
       <form   className='p-10' id="myForm">
       <input type='text' id='myInput' value={prompt} onChange={(e) => setPrompt(e.target.value)} className='rounded-lg text-center w-[70vw] p-2' placeholder='Enter Your Prompt'></input>

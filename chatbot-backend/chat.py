@@ -7,7 +7,7 @@ import numpy as np
 from tensorflow import keras
 # import tensorflow_hub as th
 from sklearn.preprocessing import LabelEncoder
-import speech_recognition as sr
+# import speech_recognition as sr
 
 import colorama
 colorama.init()
