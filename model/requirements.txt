@@ -9,6 +9,9 @@ flask==2.3.2
 flask-cors==3.1.0
 django==4.2.2
 
+# ASGI server
+uvicorn==0.15.0
+
 # Database
 sqlalchemy==2.0.15
 psycopg2==2.9.6
@@ -48,6 +51,7 @@ grpcio==1.56.0
 # numpy and pandas are essential for data manipulation and analysis
 # flask and django are popular web frameworks
 # flask-cors is for enabling CORS in Flask
+# uvicorn is for running ASGI applications
 # sqlalchemy and psycopg2 are for database interactions
 # scikit-learn, tensorflow, keras, and xgboost are for machine learning
 # nltk, spacy, and transformers are for NLP
