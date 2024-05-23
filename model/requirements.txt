@@ -1,0 +1,59 @@
+# Basic packages
+numpy==1.24.2
+pandas==2.0.3
+matplotlib==3.7.1
+scipy==1.10.1
+
+# Web development
+flask==2.3.2
+flask-cors==3.1.0
+django==4.2.2
+
+# Database
+sqlalchemy==2.0.15
+psycopg2==2.9.6
+
+# Machine learning and data science
+scikit-learn==1.3.0
+tensorflow==2.13.0
+keras==2.12.0
+xgboost==1.7.5
+
+# Natural language processing
+nltk==3.8.1
+spacy==3.5.2
+transformers==4.28.0
+
+# Utility packages
+requests==2.31.0
+beautifulsoup4==4.12.2
+pillow==9.5.0
+colorama==0.4.6
+
+# Testing
+pytest==7.4.0
+
+# Linting and formatting
+flake8==6.1.0
+black==23.3.0
+
+# Environment management
+python-dotenv==1.0.0
+
+# Specific versions (if needed for compatibility)
+protobuf==3.20.3
+grpcio==1.56.0
+
+# Comments for guidance (optional)
+# numpy and pandas are essential for data manipulation and analysis
+# flask and django are popular web frameworks
+# flask-cors is for enabling CORS in Flask
+# sqlalchemy and psycopg2 are for database interactions
+# scikit-learn, tensorflow, keras, and xgboost are for machine learning
+# nltk, spacy, and transformers are for NLP
+# requests and beautifulsoup4 are for HTTP requests and web scraping
+# pillow is for image processing
+# colorama is for colored terminal text
+# pytest is for running tests
+# flake8 and black are for code style and formatting
+# python-dotenv is for environment variable management

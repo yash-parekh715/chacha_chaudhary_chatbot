@@ -4,13 +4,14 @@ import numpy as np
 from tensorflow import keras
 import json
 from sklearn.preprocessing import LabelEncoder
+from flask_cors import CORS
 
 with open("intents.json") as file:
     data = json.load(file)
 
 
 app = Flask(__name__)
-
+CORS(app, origins=["http://127.0.0.1:3000"])
 
 @app.route('/chatbot', methods=['post'])
 def chat():
