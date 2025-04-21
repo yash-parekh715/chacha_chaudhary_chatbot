@@ -13,6 +13,7 @@ with open("intents.json") as file:
 app = Flask(__name__)
 CORS(app, origins=["http://127.0.0.1:3000"])
 
+
 @app.route('/chatbot', methods=['post'])
 def chat():
     userData = request.get_json()
@@ -34,8 +35,10 @@ def chat():
     while True:
         # print(Fore.LIGHTBLUE_EX + "User: " + Style.RESET_ALL, end="")
         # inp = input()
-        result = model.predict(keras.preprocessing.sequence.pad_sequences(tokenizer.texts_to_sequences([inp]),
-                                                                          truncating='post', maxlen=max_len))
+        # result = model.predict(keras.preprocessing.sequence.pad_sequences(tokenizer.texts_to_sequences([inp]),
+        #                                                                   truncating='post', maxlen=max_len))
+        result = model.predict(keras.utils.pad_sequences(tokenizer.texts_to_sequences([inp]),
+                                                         truncating='post', maxlen=max_len))
         tag = lbl_encoder.inverse_transform([np.argmax(result)])
 
         for i in data['intents']:

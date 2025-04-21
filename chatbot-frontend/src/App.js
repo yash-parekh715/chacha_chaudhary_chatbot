@@ -31,7 +31,7 @@ const App = () => {
       document.removeEventListener('keydown', keyDownHandler);
     };
   });
-  
+
 
   return (
     <>
@@ -45,10 +45,10 @@ const App = () => {
       <button type='submit' className=' m-2 text-2xl pl-2 text-white hover:text-slate-200'>➤</button>
       </form>
     </div>
-    </>  
+    </>
   )
 
-  
+
 }
 
 export default App
